@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cZr-fZ-aSX">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="BxY-Qc-fPl">
+            <objects>
+                <navigationController id="cZr-fZ-aSX" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="riW-x7-iSy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="lpl-2J-TFr" kind="relationship" relationship="rootViewController" id="2bo-6b-tYl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dDw-xr-fHW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-177" y="8"/>
+        </scene>
+        <!--Custom Dropdown-->
+        <scene sceneID="1qX-5R-a2d">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="lpl-2J-TFr" customClass="CustomDropdownVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ich-l4-5Kc"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bem-I8-Nhn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hcZ-ao-rQH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Su-eG-T5k">
+                                <rect key="frame" x="0.0" y="64" width="600" height="0.0"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ym2-1Y-L0B">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="0.0"/>
+                                        <animations/>
+                                    </tableView>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ym2-1Y-L0B" secondAttribute="trailing" id="XUV-XT-Z4I"/>
+                                    <constraint firstAttribute="height" id="hSe-eA-lTc"/>
+                                    <constraint firstItem="ym2-1Y-L0B" firstAttribute="leading" secondItem="9Su-eG-T5k" secondAttribute="leading" id="hTX-rB-El9"/>
+                                    <constraint firstAttribute="bottom" secondItem="ym2-1Y-L0B" secondAttribute="bottom" id="nIe-0K-Syx"/>
+                                    <constraint firstItem="ym2-1Y-L0B" firstAttribute="top" secondItem="9Su-eG-T5k" secondAttribute="top" id="o0y-X7-1Ep"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9Su-eG-T5k" firstAttribute="leading" secondItem="hcZ-ao-rQH" secondAttribute="leading" id="kXH-vA-nSi"/>
+                            <constraint firstItem="9Su-eG-T5k" firstAttribute="top" secondItem="Ich-l4-5Kc" secondAttribute="bottom" id="wgA-Pl-Ad4"/>
+                            <constraint firstAttribute="trailing" secondItem="9Su-eG-T5k" secondAttribute="trailing" id="ycv-a4-Ddp"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Custom Dropdown" id="qyT-GL-rXX"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="dropdownViewHeightConstraint" destination="hSe-eA-lTc" id="PDi-Zs-YdH"/>
+                        <outlet property="tableContaints" destination="ym2-1Y-L0B" id="ehD-qv-HXQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lOo-tI-Ce9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="511" y="8"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.96470588235294119" green="0.30588235294117649" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+</document>
