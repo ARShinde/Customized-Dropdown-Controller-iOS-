@@ -13,10 +13,8 @@ Steps to create Dropdown:
 I hope this will helps.
 
 #Demo:
---------
 ![Alt text](https://raw.githubusercontent.com/ARShinde/iOS/master/CustomDropdown-(Obj-C)/ScreenShot.gif)
 
 #Screenshot
---------
 ![Alt text](https://raw.githubusercontent.com/ARShinde/iOS/master/CustomDropdown-(Obj-C)/ScreenShot.png)
 
